@@ -8,13 +8,14 @@
         <div id="ltngContainer"></div>
 
         <script type="text/javascript">
+            var sessId = prompt("Session Id:");
             $Lightning.use(
                 "c:AccountManagerApp",
                 function() {
                     $Lightning.createComponent("c:AccountManager", null, "ltngContainer", null);
                 },
                 'https://pierpes-df15-dev-ed.lightning.force.com',
-                '00D61000000KP30!AR4AQCEpiEkBLmxcIP45M_lOmZ_HYqs1OfIEyTGXAWBzBJ.HdaQ6lu.dNPujzQoowV02Q0APuP_fPsPboC0mAqGigMunKoG6'
+                sessId
             );
         </script>
     </body>
